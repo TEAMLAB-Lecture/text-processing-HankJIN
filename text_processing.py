@@ -9,7 +9,7 @@ NLP에서 흔히하는 전처리는 소문자 변환, 앞뒤 필요없는 띄어
 
 
 def normalize(input_string):
-    input_string.lower()
+    input_string = input_string.lower()
     input_string.strip()
     normalized_string = ' '.join(input_string.split())
     return normalized_string
